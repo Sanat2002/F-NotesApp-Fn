@@ -53,6 +53,9 @@ class AuthenticationService {
       await _auth.currentUser!.updateEmail(nemail);
       return "Success";
     } on FirebaseAuthException catch(e){
+      if(e.code=="requires-recent-login"){
+        return "ReSignin";
+      }
       return "fail";
     }
   }

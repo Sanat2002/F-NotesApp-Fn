@@ -44,6 +44,7 @@ class _EditProfileState extends State<EditProfile> {
   var name = "";
   var password = "";
   var filepath = null;
+  bool a = true;
 
  final _formkey = GlobalKey<FormState>();
 
@@ -96,6 +97,15 @@ class _EditProfileState extends State<EditProfile> {
     }
   }
 
+  delimage() async{
+    var nemail = tochangeemail.replaceAll(".", "");
+    try{
+      await storage.ref("Notes/$nemail").delete();
+    } on FirebaseException catch(e){
+      print(e);
+    }
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -131,11 +141,15 @@ class _EditProfileState extends State<EditProfile> {
                   res2 = await AuthenticationService().updatepass(cpass);
                 }
                 if(res2=="ReSign"){
+                  a = false;
                   await AuthenticationService().signout();
+                  changed = "Re-SignIn Required...";
                   Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>SignIn()), (route) => false);
                 }
                 if(res1 == "Success"){
+                  a = false;
                    await changeemail();
+                   await delimage();
                     updateaccount();
                     _auth.currentUser!.sendEmailVerification();
                     
@@ -154,6 +168,12 @@ class _EditProfileState extends State<EditProfile> {
                 else if(res1==""){
                   changed = "Profile Updated";
                 }
+                else if(res1=="ReSignin"){
+                  a = false;
+                  await AuthenticationService().signout();
+                  changed = "Re-SignIn Required...";
+                  Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>SignIn()), (route) => false);
+                }
                 else if(res1!="Success"){
                   changed = "Provided Email may be already registered...";
                 }
@@ -162,7 +182,9 @@ class _EditProfileState extends State<EditProfile> {
                 }
               }
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: changed.text.red400.make())); 
-              Navigator.pop(context);
+              if(a){
+                Navigator.pop(context);
+              }
             },
              icon: Icon(Icons.check))
         ],

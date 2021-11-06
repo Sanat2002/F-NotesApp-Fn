@@ -64,6 +64,12 @@ class AuthenticationWrapper extends StatefulWidget {
 }
 
 class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   AuthenticationService().signout();
+  // }
   @override
   Widget build(BuildContext context) {
 
