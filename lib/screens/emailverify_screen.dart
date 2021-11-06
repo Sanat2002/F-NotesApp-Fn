@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_notes_realdb/main.dart';
-import 'package:flutter_notes_realdb/screens/shownotes_screen.dart';
-import 'package:flutter_notes_realdb/screens/signup_screen.dart';
+import 'package:flutter_notes_fn/main.dart';
+import 'package:flutter_notes_fn/screens/shownotes_screen.dart';
+import 'package:flutter_notes_fn/screens/signup_screen.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'dart:async';
 

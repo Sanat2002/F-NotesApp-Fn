@@ -3,9 +3,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_notes_realdb/screens/shownotes_screen.dart';
-import 'package:flutter_notes_realdb/screens/signup_screen.dart';
-import 'package:flutter_notes_realdb/services/authentication.dart';
+import 'package:flutter_notes_fn/screens/shownotes_screen.dart';
+import 'package:flutter_notes_fn/screens/signup_screen.dart';
+import 'package:flutter_notes_fn/services/authentication.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:core';

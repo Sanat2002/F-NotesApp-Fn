@@ -8,11 +8,11 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_notes_realdb/screens/addnotes_screen.dart';
-import 'package:flutter_notes_realdb/screens/updatenotes_screen.dart';
+import 'package:flutter_notes_fn/screens/addnotes_screen.dart';
+import 'package:flutter_notes_fn/screens/updatenotes_screen.dart';
 // import 'package:flutter_notes/widgets/drawer.dart';
-import 'package:flutter_notes_realdb/services/authentication.dart';
-import 'package:flutter_notes_realdb/widgets/drawer.dart';
+import 'package:flutter_notes_fn/services/authentication.dart';
+import 'package:flutter_notes_fn/widgets/drawer.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class ShowNotes extends StatefulWidget {

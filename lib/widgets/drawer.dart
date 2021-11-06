@@ -4,10 +4,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_notes_realdb/screens/deleteaccount_screen.dart';
-import 'package:flutter_notes_realdb/screens/editprofile_screen.dart';
-import 'package:flutter_notes_realdb/screens/signin_screen.dart';
-import 'package:flutter_notes_realdb/services/authentication.dart';
+import 'package:flutter_notes_fn/screens/deleteaccount_screen.dart';
+import 'package:flutter_notes_fn/screens/editprofile_screen.dart';
+import 'package:flutter_notes_fn/screens/signin_screen.dart';
+import 'package:flutter_notes_fn/services/authentication.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class Drawerr extends StatefulWidget {

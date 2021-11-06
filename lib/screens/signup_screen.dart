@@ -2,10 +2,10 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_notes_realdb/main.dart';
-import 'package:flutter_notes_realdb/screens/emailverify_screen.dart';
-import 'package:flutter_notes_realdb/screens/signin_screen.dart';
-import 'package:flutter_notes_realdb/services/authentication.dart';
+import 'package:flutter_notes_fn/main.dart';
+import 'package:flutter_notes_fn/screens/emailverify_screen.dart';
+import 'package:flutter_notes_fn/screens/signin_screen.dart';
+import 'package:flutter_notes_fn/services/authentication.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:core';
