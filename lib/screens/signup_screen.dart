@@ -59,7 +59,7 @@ class _SignUpState extends State<SignUp> {
           children: [
             50.heightBox,
             "Welcome To NotesApp".text.textStyle(TextStyle(color: Colors.deepPurple,letterSpacing: 2,fontFamily: GoogleFonts.balooBhai().fontFamily)).xl4.make(),
-            Image.asset("assests/images/Signup.png",),
+            Image.asset("assets/images/Signup.png",),
             10.heightBox,
             "Sign Up".text.textStyle(TextStyle(fontFamily: GoogleFonts.anticSlab().fontFamily)).xl4.make(),
             20.heightBox,

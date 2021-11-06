@@ -37,7 +37,7 @@ class _SignInState extends State<SignIn> {
           children: [
             50.heightBox,
             "Welcome To NotesApp".text.textStyle(TextStyle(color: Colors.deepPurple,letterSpacing: 2,fontFamily: GoogleFonts.balooBhai().fontFamily)).xl4.make(),
-            Image.asset("assests/images/Signin.png",),
+            Image.asset("assets/images/Signin.png",),
             10.heightBox,
             "Sign In".text.textStyle(TextStyle(fontFamily: GoogleFonts.anticSlab().fontFamily)).xl4.make(),
             20.heightBox,

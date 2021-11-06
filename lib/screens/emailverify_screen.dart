@@ -54,7 +54,7 @@ class _EmailVerifyState extends State<EmailVerify> {
         child: Center(
           child: Column(
             children: [
-              Image.asset("assests/images/Emailsent.png"),
+              Image.asset("assets/images/Emailsent.png"),
               "Email Verification Link has been sent to your email address ".text.gray500.xl.make().px16().py12(),
               widget.email.text.color(Colors.blue).xl2.make().px16(),
               " Please, Verify the Email to Sign In...".text.xl.make().px16().py12(),

@@ -76,7 +76,7 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
         home: AnimatedSplashScreen(
           splashIconSize: 220,
           duration: 3500,
-          splash: Lottie.asset("assests/images/notes_splash_ani.json"),
+          splash: Lottie.asset("assets/images/notes_splash_ani.json"),
           splashTransition: SplashTransition.sizeTransition,
           animationDuration: Duration(seconds: 2),
           nextScreen: SignUp())
@@ -95,7 +95,7 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
       home: AnimatedSplashScreen(
           splashIconSize: 220,
           duration: 3500,
-          splash: Lottie.asset("assests/images/notes_splash_ani.json"),
+          splash: Lottie.asset("assets/images/notes_splash_ani.json"),
           splashTransition: SplashTransition.sizeTransition,
           animationDuration: Duration(seconds: 2),
           nextScreen: SignUp()));
